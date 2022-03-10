@@ -51,7 +51,7 @@ if (request.getParameter("itemCode") != null)
  <input type="text" value="Enter new Item name" name="newName"><br>
  <input type="text" value="Enter new item price" name="newPrice"><br>
  <input type="text" value="Enter new item description" name="newDesc"><input type="submit" value="update">
- 
+ <h1>Hello</h1>
 </form>
 
 
