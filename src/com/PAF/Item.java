@@ -70,7 +70,7 @@ public class Item {
 		 return "Error while connecting to the database for reading."; 
 		 } 
 		 // Prepare the html table to be displayed
-		 output = "<table border='1'><tr><th>Item Code</th>" 
+		 output = "<table class='table table-dark' border='1'><tr><th>Item Code</th>" 
 		 +"<th>Item Name</th><th>Item Price</th>"
 		 + "<th>Item Description</th>" 
 		 + "<th>Update</th><th>Remove</th></tr>"; 
@@ -93,10 +93,10 @@ public class Item {
 		 output += "<td>" + itemDesc + "</td>"; 
 		 // buttons
 		 output += "<td><input name='btnUpdate' " 
-		 + " type='button' value='Update'></td>"
+		 + " type='button' value='Update' class='btn btn-secondary''></td>"
 		 + "<td><form method='post' action='items.jsp'>"
 		 + "<input name='btnRemove' " 
-		 + " type='submit' value='Remove'>"
+		 + " type='submit' value='Remove' class='btn btn-danger'>"
 		 + "<input name='itemID' type='hidden' " 
 		 + " value='" + itemID + "'>" + "</form></td></tr>"; 
 		 } 
@@ -200,7 +200,8 @@ public class Item {
 		 + " type='button' value='Update'></td>"
 		 + "<td><form method='post' action='items.jsp'>"
 		 + "<input name='btnRemove' " 
-		 + " type='submit' value='Remove'>"
+		 + " type='submit' value='Remove' class=' btn btn-danger '>"
+		 + "'>"
 		 + "<input name='itemID' type='hidden' " 
 		 + " value='" + itemID + "'>" + "</form></td></tr>"; 
 		 } 
